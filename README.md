@@ -6,15 +6,17 @@ Kho lưu trữ này chứa phân tích hoạt động commit của kho 'vercel/v
 
 ## Nội dung
 
+- **data/commits_data.csv**: Dữ liệu commit thô được lấy từ 'vercel/vercel'.
 - **data/commits_data_cleaned.csv**: Dữ liệu commit đã làm sạch.
 - **data/commits_data_preprocessed.csv**: Dữ liệu commit đã tiền xử lý cho năm 2023.
 - **notebooks/commit_analysis.ipynb**: Jupyter Notebook chứa mã phân tích.
+- **python/commit_analysis.py**: Python chứa mã phân tích.
 - **plots/**: Thư mục chứa các biểu đồ đã tạo.
 
 ## Làm sạch và xử lý dữ liệu
 
 Dữ liệu được thu thập bằng cách sử dụng GitHub API và bao gồm các bước sau:
-1. **Thu thập dữ liệu ban đầu**: Trích xuất dữ liệu commit bao gồm SHA, tác giả, ngày tháng, thông điệp, và các tệp đã thay đổi.
+1. **Thu thập dữ liệu ban đầu**: Trích xuất dữ liệu commit bao gồm SHA, Author_name, Author_date, committer, committer_date, message.
 2. **Làm sạch dữ liệu**: Loại bỏ các giá trị null và trùng lặp.
 3. **Lọc dữ liệu cho năm 2023**: Tập trung vào các commits được thực hiện trong năm 2023.
 4. **Chuyển đổi ngày tháng**: Chuyển đổi các cột ngày thành định dạng datetime.
