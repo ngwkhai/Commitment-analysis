@@ -1,4 +1,3 @@
-content = """
 # Phân Tích Commit Vercel 2023
 
 ## Giới thiệu
@@ -74,4 +73,3 @@ Phân tích này có thể thực hiện được nhờ vào dữ liệu cung c�
 ## Giấy phép
 
 Dự án này được cấp phép theo giấy phép MIT. Xem tệp LICENSE để biết chi tiết.
-"""
